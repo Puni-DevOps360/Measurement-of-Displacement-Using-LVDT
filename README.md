@@ -1,66 +1,56 @@
-# Aim: 
-Measurement of Displacement using LVDT
-## Objective:-
-Study the relation between core displacement and output of LVDT
-Understand the effect of change in supply frequency on LVDT performance
-Understand the effect of change in excitation (supply) voltage on LVDT performance.
+## Aim : 
+
+Checking the frequencies of the Sine, Square, and Triangle waves on the waveform generator
+This experiment will help the students to learn measuring voltages, time, frequency.
+This experiment will help the students to learn about lissajous figures
 
 ## Procedure:
-First you need to configure the LVDT. Click on ' Show panel' tab at the right bottom For making the circuit, drag and drop the primary coil, Armature and secondary coils at the loactions shown on left hand side.
-Now select No of Turns, peak to peak supply volatge and frequency from the drag and drop menu, available below LVDT diagram. Click on configure block to configure LVDT.
-Now click on the black rectangular core placed between primary and secondary windings.
-Drag the core to left hand side and observe the effect on the output magnitude. This can be observed on the time vs output volatge waveform and on the Distance vs output voltage graph. The core displacement is indicated in the square box below the diagram
-Drag the core to right hand side and observe the effect on the output magnitude. Also observe the change in the phase.
-Repeat steps 2 to 4 by changing supply volatge keeping frequency and no of turns constant.
-Study the effect on the output voltage. For this click on blue color 'Configure' tab in the right side panel. You need to select required parameter value from drop down menu. After selecting the values click on green ' Configure' tab to set the parameter values.
-Repeat steps 2 to 4 by changing supply frequency keeping and no of turns constant. Study the effect on the output voltage. Now keep supply voltage and frequency constant. Change the no of turns and observe the effect on the output voltage by repeating steps 2 to 4.
 
-## Circuit Diagram of LVDT
-<img width="205" height="378" alt="image" src="https://github.com/user-attachments/assets/ecd1b859-98fc-4263-939c-f735761a2815" />
+Connect the components as mentioned below: L1-L5, L3-L6, L4-L7, L2-L7.(For eg. click on 1 and then drag to 5 and so on.)
+Click on 'Check Connection' button to check the connections.
+If connected wrong, click on the wrong connection. Else click on 'Delete all connection' button to erase all the connections.
+Connect L1-L5. This will connect the function generator 1 to channel 1 probe of oscilloscope.
+Connect L3-L6. This will connect the function generator 2 to channel 2 probe of oscilloscope.
+Connect L4-L7, L2-L7. This will connect the ground of function generator 1 and function generator 2 with oscilloscope.
+Click on 'ON' button to start the experiment.
+Double Click on 'Sine Wave' button to generate input waveform (2 Vp-p, 1kHz) from Function Generator 1.
+Double Click on 'Sine Wave' button to generate input waveform (2 Vp-p, 1kHz) from Function Generator 2.
+Vary the Amplitude, Frequency, volt/div using the controllers.
+Double Click on "Dual" button to observe both the waveform.
+Click on "X-Y" button to observe the specialized two-channel mode of oscilloscope. The XY time mode converts the oscilloscope from a volts-versus-time display to a volts-versus-volts display using two input channels. Channel 1 is the X-axis input, channel 2 is the Y-axis input.
+Channel 1 shows the waveform of Function Generator 1, Channel 2 shows the waveform of Function Generator 2.
+Repeat step 10-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (2 Vp-p, 1kHz) from Function Generator 1 and Function Generator 2.
+Note : Sometimes due to page load or cache, the graph may not come exact at one click. So it is better to double click on the channel-1 function/ channel-2 function/ dual function/ground function to get the respective signals.
+Oscilloscope and function generator is described more elaborately in the Oscilloscope Tutorial section.
 
-## NOTE
-The Supply Voltage range is 5V to 15V
-The Supply Frequency range is 1KHz to 10KHz
-For simulation purpuse ,the Supply Voltage is restricted to 10V and Supply Frequency is restricted to 5 KHz
-
-## Measuremnt:
-Number of Turns : 
-Supply Voltage :
-Supply Frequency :
-
-
-## Formula Used :
-Vout=fIp(4πNpNsµ0bx/3mlog(ro/ri))(1-(x2/2b2))
-Where,
-f =supply frequency (user selectable)
-
-Ip=primary current = Vin/R
-
-Where Vin (Vrms) is user selectable and R is the coil resistance ( 10 K Ohm)
-
-Np=number of primary turns (user selectable)
-
-Ns=number of secondary turns ( half of primary turns)
-
-ro/ri=Ratio of outer and inner radii of the coil system ( = 2)
-
-x=displacement of the core form null (from actual core postion)
-
-µ0=permeability of space (4π10^-7h/m)
-
-b = length of primary winding (= 20mm)
-
-m = length of secondary winding (= 10 mm)
+## Formula:
+CALCULATION
 
 
-## Output waveforms:
+  Vm
+= ( No. of Minor division) x (per scale division) x Multiplying factor, or
+  Vm
+= ( No. of Major division) x Multiplying factor
+
+  Tm
+= ( No. of Minor division) x (per scale division) x Multiplying factor, or
+  Tm
+= ( No. of Major division) x Multiplying factor
+
+where, Multiplying factor is the volt/div or time/div,
+If volt/div= 1 volt; 1 Major div is 1v and each minor div is 0.2v.
+If time/div= 0.1 ms; 1 Major div is 0.1ms and each minor div is 0.02 ms.
+
+## Circuit Diagram:
+
+<img width="1576" height="903" alt="image" src="https://github.com/user-attachments/assets/2c01a27c-4956-4474-9d93-f25924624870" />
 
 
+## Output Graph:
 
-
+<img width="1585" height="898" alt="image" src="https://github.com/user-attachments/assets/f0023ab4-30d1-4afa-8a9e-57dd73644e2c" />
 
 
 ## Result:
 
-
-
+Thus Measurement-of-phase-and-frequency-using-lissajous-pattern is verified.
